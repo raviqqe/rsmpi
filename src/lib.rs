@@ -12,6 +12,7 @@
 #![warn(unused_import_braces)]
 #![warn(unused_qualifications)]
 #![deny(warnings)]
+#![cfg_attr(not(feature="nightly"), allow(unused_unsafe))]
 
 #![cfg_attr(feature="clippy", warn(cast_possible_truncation))]
 #![cfg_attr(feature="clippy", warn(cast_possible_wrap))]
